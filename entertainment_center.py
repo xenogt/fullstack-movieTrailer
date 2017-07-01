@@ -1,7 +1,9 @@
 import fresh_tomatoes
 import media
 
-#each movie objects below has 3 fields, title, poster_image_url and trailer_youtube_url
+'''each movie objects below has 3 fields, title, poster_image_url and
+ trailer_youtube_url'''
+
 transformer = media.Movie(
     'Transformer',
     'https://image.tmdb.org/t/p/w640/f8Ng1Sgb3VLiSwAvrfKeQPzvlfr.jpg',
@@ -41,14 +43,18 @@ warcraft = media.Movie(
     'Warcraft',
     'https://image.tmdb.org/t/p/w640/ckrTPz6FZ35L5ybjqvkLWzzSLO7.jpg',
     'https://www.youtube.com/watch?v=RhFMIRuHAL4')
-    
+
 the_foreigner = media.Movie(
     'The Foreigner',
     'https://image.tmdb.org/t/p/w640/mZ6G8LorvBJ9LdzE2XhePLUtWpy.jpg',
     'https://www.youtube.com/watch?v=LmImJ6ZUiqE')
 
-#list of movie instances created from media.Movie class
-movies = [transformer, beauty_and_beast, despicable_me, hunger_games, lord_of_ring, harry_potter, wonder_woman, warcraft, the_foreigner]
+# list of movie instances created from media.Movie class
+movies = [
+    transformer, beauty_and_beast, despicable_me, hunger_games,
+    lord_of_ring, harry_potter, wonder_woman, warcraft, the_foreigner
+    ]
 
-#calling the open_movies_page method in fresh_tomatoes file, passed in the movies array as argument.
+'''calling the open_movies_page method in fresh_tomatoes file, passed in
+the movies array as argument.'''
 fresh_tomatoes.open_movies_page(movies)
